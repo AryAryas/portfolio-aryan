@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Portfolio</title>
+    <title>Aryan Solanki - iOS Developer Portfolio</title>
     <style>
         * {
             margin: 0;
@@ -87,7 +87,7 @@
             align-items: center;
             justify-content: center;
             text-align: center;
-            color: black;
+            color: white;
             position: relative;
         }
 
@@ -100,9 +100,19 @@
 
         .hero-content .subtitle {
             font-size: 1.5rem;
-            margin-bottom: 2rem;
+            margin-bottom: 1rem;
             opacity: 0;
             animation: fadeInUp 1s ease 0.3s forwards;
+        }
+
+        .hero-content .description {
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            opacity: 0;
+            animation: fadeInUp 1s ease 0.4s forwards;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         .cta-button {
@@ -170,6 +180,19 @@
             margin-bottom: 1rem;
         }
 
+        .education-item, .personal-info {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin: 1rem 0;
+            border-left: 4px solid #667eea;
+        }
+
+        .education-item h4, .personal-info h4 {
+            color: #667eea;
+            margin-bottom: 0.5rem;
+        }
+
         /* Skills Section */
         .skills-grid {
             display: grid;
@@ -203,81 +226,98 @@
             font-size: 1.5rem;
         }
 
-        /* Projects Section */
-        .projects-grid {
+        /* Experience Section */
+        .experience-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 2rem;
         }
 
-        .project-card {
+        .experience-card {
             background: white;
+            padding: 2rem;
             border-radius: 15px;
-            overflow: hidden;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease;
+            border-left: 4px solid #667eea;
         }
 
-        .project-card:hover {
+        .experience-card:hover {
             transform: translateY(-5px);
         }
 
-        .project-image {
-            height: 200px;
-            background: linear-gradient(45deg, #667eea, #764ba2);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-size: 1.2rem;
-        }
-
-        .project-content {
-            padding: 1.5rem;
-        }
-
-        .project-content h3 {
+        .experience-card h3 {
             color: #667eea;
             margin-bottom: 0.5rem;
         }
 
-        .project-links {
-            margin-top: 1rem;
-        }
-
-        .project-links a {
+        .experience-year {
+            background: #667eea;
+            color: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
             display: inline-block;
-            margin-right: 1rem;
-            color: #667eea;
-            text-decoration: none;
-            font-weight: 500;
-        }
-
-        .project-links a:hover {
-            text-decoration: underline;
+            margin-bottom: 1rem;
         }
 
         /* Contact Section */
         .contact-content {
-            max-width: 600px;
-            margin: 0 auto;
-            text-align: center;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: start;
+        }
+
+        .contact-info {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-info h3 {
+            color: #667eea;
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+
+        .contact-item i {
+            width: 40px;
+            height: 40px;
+            background: #667eea;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            margin-right: 1rem;
         }
 
         .contact-form {
-            display: grid;
-            gap: 1rem;
-            margin-top: 2rem;
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-form h3 {
+            color: #667eea;
+            margin-bottom: 1.5rem;
         }
 
         .form-group {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 1rem;
+            margin-bottom: 1rem;
         }
 
         .contact-form input,
         .contact-form textarea {
+            width: 100%;
             padding: 1rem;
             border: 2px solid #e9ecef;
             border-radius: 10px;
@@ -292,13 +332,12 @@
         }
 
         .contact-form textarea {
-            grid-column: 1 / -1;
             resize: vertical;
             min-height: 120px;
         }
 
         .submit-btn {
-            grid-column: 1 / -1;
+            width: 100%;
             padding: 1rem 2rem;
             background: #667eea;
             color: white;
@@ -398,7 +437,7 @@
                 text-align: center;
             }
 
-            .form-group {
+            .contact-content {
                 grid-template-columns: 1fr;
             }
 
@@ -416,7 +455,7 @@
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
             <div class="hamburger" onclick="toggleMenu()">
@@ -430,7 +469,8 @@
     <section id="home" class="hero">
         <div class="hero-content">
             <h1>Aryan Solanki</h1>
-            <p class="subtitle">UI/UX Designer</p>
+            <p class="subtitle">iOS App Developer & UI/UX Designer</p>
+            <p class="description">Motivated Computer Science Engineering student specializing in iOS App Development with expertise in UI design, problem-solving, and team coordination</p>
             <a href="#contact" class="cta-button">Get In Touch</a>
         </div>
     </section>
@@ -440,13 +480,28 @@
             <h2 class="section-title">About Me</h2>
             <div class="about-content">
                 <div class="about-image">
-                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjUwIiBoZWlnaHQ9IjI1MCIgdmlld0JveD0iMCAwIDI1MCAyNTAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIyNTAiIGhlaWdodD0iMjUwIiBmaWxsPSIjNjY3ZWVhIi8+Cjx0ZXh0IHg9IjEyNSIgeT0iMTM1IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSJ3aGl0ZSIgZm9udC1zaXplPSI0OCIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIj5KRDwvdGV4dD4KPC9zdmc+" alt="Profile Picture">
+                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjUwIiBoZWlnaHQ9IjI1MCIgdmlld0JveD0iMCAwIDI1MCAyNTAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIyNTAiIGhlaWdodD0iMjUwIiBmaWxsPSIjNjY3ZWVhIi8+Cjx0ZXh0IHg9IjEyNSIgeT0iMTM1IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSJ3aGl0ZSIgZm9udC1zaXplPSI0OCIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIj5BUzwvdGV4dD4KPC9zdmc+" alt="Aryan Solanki">
                 </div>
                 <div class="about-text">
-                    <h3>Hello! I'm John Doe</h3>
-                    <p>I'm a passionate full-stack developer with over 5 years of experience creating digital experiences that make a difference. I specialize in modern web technologies and love turning complex problems into simple, beautiful designs.</p>
-                    <p>When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or enjoying a good cup of coffee while reading about the latest in tech.</p>
-                    <p>I believe in writing clean, maintainable code and creating user experiences that are both functional and delightful.</p>
+                    <h3>Hello! I'm Aryan Solanki</h3>
+                    <p>I'm a motivated and detail-oriented Computer Science Engineering student specializing in iOS App Development. I'm skilled in UI design, problem-solving, and team coordination, with strong communication abilities in English.</p>
+                    <p>I have hands-on experience through internships, hackathons, and certifications in areas like image processing and AR development. I'm eager to contribute my technical skills, creativity, and growth mindset to dynamic organizations.</p>
+                    
+                    <div class="education-item">
+                        <h4>Education</h4>
+                        <p><strong>Bachelor of Technology in Computer Science Engineering</strong><br>
+                        Shree Guru Gobind Singh Tricentenary University<br>
+                        Specialization in iOS App Development (Aug 2022 - Aug 2026)</p>
+                        <p><strong>CBSE Board - Pragati Public School</strong><br>
+                        Class 12: 90% (2022) | Class 10: 85% (2020)</p>
+                    </div>
+
+                    <div class="personal-info">
+                        <h4>Personal Information</h4>
+                        <p><strong>Date of Birth:</strong> September 29, 2004<br>
+                        <strong>Location:</strong> Dwarka Sector-11, New Delhi<br>
+                        <strong>Father's Name:</strong> Ravinder Solanki</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -457,71 +512,72 @@
             <h2 class="section-title">Skills & Technologies</h2>
             <div class="skills-grid">
                 <div class="skill-card">
-                    <div class="skill-icon">💻</div>
-                    <h3>Frontend Development</h3>
-                    <p>HTML5, CSS3, JavaScript, React, Vue.js, TypeScript</p>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon">⚙️</div>
-                    <h3>Backend Development</h3>
-                    <p>Node.js, Python, Express.js, Django, REST APIs</p>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon">🗄️</div>
-                    <h3>Database & Cloud</h3>
-                    <p>MongoDB, PostgreSQL, AWS, Docker, Git</p>
+                    <div class="skill-icon">📱</div>
+                    <h3>iOS Development</h3>
+                    <p>Specialized in iOS App Development with hands-on experience in mobile application design and development</p>
                 </div>
                 <div class="skill-card">
                     <div class="skill-icon">🎨</div>
-                    <h3>Design & UX</h3>
-                    <p>Figma, Adobe XD, UI/UX Design, Responsive Design</p>
+                    <h3>UI/UX Design</h3>
+                    <p>UI designing experience with prototype designing skills and expertise in creating user-friendly interfaces</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">🤝</div>
+                    <h3>Soft Skills</h3>
+                    <p>Coordination skills, good listener, problem solving, attention to details, fluent in English</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">🔧</div>
+                    <h3>Technical Skills</h3>
+                    <p>Image processing through MATLAB, Spark AR Facebook, C programming with Data Structures, Digital Marketing</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">🎪</div>
+                    <h3>Other Skills</h3>
+                    <p>Anchoring, Poster design, Volunteering, Event organization and management</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="projects" class="fade-in">
+    <section id="experience" class="fade-in">
         <div class="container">
-            <h2 class="section-title">Featured Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-image">
-                        E-Commerce Platform
-                    </div>
-                    <div class="project-content">
-                        <h3>E-Commerce Platform</h3>
-                        <p>A full-stack e-commerce solution built with React and Node.js. Features include user authentication, payment processing, and admin dashboard.</p>
-                        <div class="project-links">
-                            <a href="#">Live Demo</a>
-                            <a href="#">GitHub</a>
-                        </div>
-                    </div>
+            <h2 class="section-title">Experience & Achievements</h2>
+            <div class="experience-grid">
+                <div class="experience-card">
+                    <div class="experience-year">2024</div>
+                    <h3>Startup Genesis Bootcamp</h3>
+                    <p>Organized and coordinated the Startup Genesis Bootcamp, demonstrating leadership and event management skills.</p>
                 </div>
-                <div class="project-card">
-                    <div class="project-image">
-                        Task Management App
-                    </div>
-                    <div class="project-content">
-                        <h3>Task Management App</h3>
-                        <p>A collaborative task management application with real-time updates, built using Vue.js and Firebase. Supports team collaboration and project tracking.</p>
-                        <div class="project-links">
-                            <a href="#">Live Demo</a>
-                            <a href="#">GitHub</a>
-                        </div>
-                    </div>
+                <div class="experience-card">
+                    <div class="experience-year">2024</div>
+                    <h3>UI Design Intern</h3>
+                    <p>Completed internship certificate in UI designing at a startup, gaining practical experience in user interface design.</p>
                 </div>
-                <div class="project-card">
-                    <div class="project-image">
-                        Weather Dashboard
-                    </div>
-                    <div class="project-content">
-                        <h3>Weather Dashboard</h3>
-                        <p>A responsive weather application that provides detailed forecasts and weather analytics. Built with vanilla JavaScript and integrated with weather APIs.</p>
-                        <div class="project-links">
-                            <a href="#">Live Demo</a>
-                            <a href="#">GitHub</a>
-                        </div>
-                    </div>
+                <div class="experience-card">
+                    <div class="experience-year">2024</div>
+                    <h3>Hackathon Participant</h3>
+                    <p>Active participation in multiple hackathons at SGT University, showcasing problem-solving and technical skills.</p>
+                </div>
+                <div class="experience-card">
+                    <div class="experience-year">2023</div>
+                    <h3>Ideathon Winner</h3>
+                    <p>Secured Second Position in Ideathon at SGTU, demonstrating innovation and creative thinking abilities.</p>
+                </div>
+                <div class="experience-card">
+                    <div class="experience-year">2023</div>
+                    <h3>Digital Marketing Intern</h3>
+                    <p>Completed internship at Systools in Digital Marketing, gaining experience in digital marketing strategies and tools.</p>
+                </div>
+                <div class="experience-card">
+                    <div class="experience-year">2022</div>
+                    <h3>Technical Certifications</h3>
+                    <p>Earned certifications in Image processing through MATLAB and Spark AR Facebook development, expanding technical expertise.</p>
+                </div>
+                <div class="experience-card">
+                    <div class="experience-year">2016</div>
+                    <h3>Academic Achievement</h3>
+                    <p>Received Appreciation Certification from Australia National Chemistry Quiz, demonstrating academic excellence.</p>
                 </div>
             </div>
         </div>
@@ -531,16 +587,55 @@
         <div class="container">
             <h2 class="section-title">Get In Touch</h2>
             <div class="contact-content">
-                <p>I'm always open to discussing new opportunities, interesting projects, or just having a chat about technology. Feel free to reach out!</p>
-                <form class="contact-form" onsubmit="handleSubmit(event)">
-                    <div class="form-group">
-                        <input type="text" name="name" placeholder="Your Name" required>
-                        <input type="email" name="email" placeholder="Your Email" required>
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <div class="contact-item">
+                        <i>📧</i>
+                        <div>
+                            <strong>Email</strong><br>
+                            aryanslnky04@gmail.com
+                        </div>
                     </div>
-                    <input type="text" name="subject" placeholder="Subject" required>
-                    <textarea name="message" placeholder="Your Message" required></textarea>
-                    <button type="submit" class="submit-btn">Send Message</button>
-                </form>
+                    <div class="contact-item">
+                        <i>📱</i>
+                        <div>
+                            <strong>Phone</strong><br>
+                            +91 8076069580
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i>📍</i>
+                        <div>
+                            <strong>Address</strong><br>
+                            Vyas Kunj Apartment, Dwarka Sector-11, Pocket-2, 110075
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i>💼</i>
+                        <div>
+                            <strong>LinkedIn</strong><br>
+                            <a href="https://www.linkedin.com/in/aryan-solanki-24042004as" style="color: #667eea;">linkedin.com/in/aryan-solanki-24042004as</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>Send Message</h3>
+                    <form onsubmit="handleSubmit(event)">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
             </div>
         </div>
     </section>
@@ -548,12 +643,11 @@
     <footer>
         <div class="container">
             <div class="social-links">
-                <a href="#">LinkedIn</a>
-                <a href="#">GitHub</a>
-                <a href="#">Twitter</a>
-                <a href="#">Email</a>
+                <a href="https://www.linkedin.com/in/aryan-solanki-24042004as">LinkedIn</a>
+                <a href="mailto:aryanslnky04@gmail.com">Email</a>
+                <a href="tel:+918076069580">Phone</a>
             </div>
-            <p>&copy; 2024 John Doe. All rights reserved.</p>
+            <p>&copy; 2024 Aryan Solanki. All rights reserved.</p>
         </div>
     </footer>
 
@@ -656,9 +750,9 @@
                 card.style.animationDelay = `${index * 0.2}s`;
             });
 
-            // Add staggered animation to project cards
-            const projectCards = document.querySelectorAll('.project-card');
-            projectCards.forEach((card, index) => {
+            // Add staggered animation to experience cards
+            const experienceCards = document.querySelectorAll('.experience-card');
+            experienceCards.forEach((card, index) => {
                 card.style.animationDelay = `${index * 0.3}s`;
             });
         });
