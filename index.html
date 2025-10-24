@@ -3,14 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aryan Solanki | Full-Stack Developer Portfolio</title>
-    <meta name="description" content="Portfolio of Aryan Solanki, a passionate full-stack developer crafting modern and responsive web applications.">
-    <meta name="keywords" content="Aryan Solanki, Full-Stack Developer, Web Developer, Portfolio, React, Node.js, JavaScript">
+    <title>Aryan Solanki | iOS & UI/UX Developer Portfolio</title>
     
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚀</text></svg>">
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Portfolio of Aryan Solanki, a motivated Computer Science student specializing in iOS App Development, UI design, and problem-solving.">
+    <meta name="keywords" content="Aryan Solanki, iOS Developer, UI/UX Designer, Student, Portfolio, Swift, UI, UX, Computer Science">
     
+    <!-- Favicon (Emoji version for simplicity) -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👨‍💻</text></svg>">
+    
+    <!-- All CSS is inlined below for a single-file solution -->
     <style>
-        
+        /* 
+        ================================================================================
+        FONTS & VARIABLES
+        ================================================================================
+        */
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap');
 
         :root {
@@ -718,8 +726,8 @@
         <section id="home" class="hero">
             <div class="hero-content container">
                 <div class="hero-image">
-                    <!-- TODO: Replace with your actual photo -->
-                    <img src="https://i.pravatar.cc/300?u=aryan" alt="Aryan Solanki" class="profile-photo">
+                    <!-- TODO: Replace this placeholder with your actual photo URL! -->
+                    <img src="https://i.pravatar.cc/300?u=aryansolanki" alt="Aryan Solanki" class="profile-photo">
                     <div class="photo-border"></div>
                 </div>
                 <div class="hero-text">
@@ -729,17 +737,16 @@
                         <span class="cursor">|</span>
                     </h1>
                     <p class="hero-description">
-                        I'm a full-stack developer passionate about building elegant solutions to complex problems and creating pixel-perfect digital experiences.
+                        A motivated and detail-oriented Computer Science student specializing in iOS App Development and UI design. Eager to contribute technical skills, creativity, and a growth mindset to a dynamic organization.
                     </p>
                     <div class="hero-cta">
                         <a href="#projects" class="btn btn-primary">View My Work</a>
                         <a href="#contact" class="btn btn-secondary">Get In Touch</a>
                     </div>
                     <div class="social-links">
-                        <!-- TODO: Replace with your actual social links -->
-                        <a href="https://github.com/yourusername" class="social-icon" target="_blank" aria-label="GitHub"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg></a>
-                        <a href="https://linkedin.com/in/yourusername" class="social-icon" target="_blank" aria-label="LinkedIn"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></a>
-                        <a href="https://twitter.com/yourusername" class="social-icon" target="_blank" aria-label="Twitter"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/></svg></a>
+                        <a href="https://github.com/AryAryas" class="social-icon" target="_blank" aria-label="GitHub"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg></a>
+                        <a href="https://www.linkedin.com/in/aryan-solanki-profile" class="social-icon" target="_blank" aria-label="LinkedIn"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></a>
+                        <!-- Add a Twitter/X link if you have one -->
                     </div>
                 </div>
             </div>
@@ -753,17 +760,17 @@
                 <div class="about-content">
                     <div class="about-text">
                         <h3>My Journey</h3>
-                        <p>I started my development journey out of a deep curiosity for how things work on the web. What began with simple "Hello, World!" projects has blossomed into a full-fledged passion for creating meaningful and intuitive digital experiences that solve real-world problems.</p>
+                        <p>As a Computer Science Engineering student, my fascination with technology quickly led me to the world of application development. I'm currently specializing in iOS development, driven by a passion for creating seamless, user-centric mobile experiences. I thrive on translating theoretical knowledge into practical skills through hands-on projects, internships, and competitive events.</p>
                         <h3>What I Do</h3>
-                        <p>I specialize in building responsive, high-performance web applications from the ground up. My expertise lies in the MERN stack (MongoDB, Express, React, Node.js), but I am a firm believer in continuous learning and always eager to explore new technologies to find the best tool for the job.</p>
+                        <p>I focus on designing and developing applications with a strong emphasis on intuitive UI and robust problem-solving. My experience in hackathons and my internship in UI design have provided me with a solid foundation in both the aesthetic and functional aspects of software development. I enjoy tackling challenges and coordinating with teams to bring ideas to life.</p>
                         <h3>What Drives Me</h3>
-                        <p>I'm driven by the challenge of turning complex ideas into clean, maintainable, and scalable code. I find immense satisfaction in seeing a product come to life and positively impact its users. Collaboration and open-source contributions are also a big part of what keeps me motivated.</p>
+                        <p>I am fueled by a growth mindset and the desire to make a tangible impact. Whether it's winning second place in an Ideathon or diving into new technologies like AR and image processing, I am constantly seeking opportunities to learn, innovate, and contribute my creativity to a dynamic team.</p>
                     </div>
                     <div class="about-highlights">
-                        <div class="highlight-item"><span class="icon">📍</span><div><strong>Location</strong><span>Your City, Country</span></div></div>
-                        <div class="highlight-item"><span class="icon">💼</span><div><strong>Experience</strong><span>2+ Years</span></div></div>
-                        <div class="highlight-item"><span class="icon">🎓</span><div><strong>Education</strong><span>Your Degree/Bootcamp</span></div></div>
-                        <div class="highlight-item"><span class="icon">💡</span><div><strong>Interests</strong><span>Open Source, UI/UX, AI</span></div></div>
+                        <div class="highlight-item"><span class="icon">📍</span><div><strong>Location</strong><span>Delhi, India</span></div></div>
+                        <div class="highlight-item"><span class="icon">💼</span><div><strong>Status</strong><span>Student & Aspiring Developer</span></div></div>
+                        <div class="highlight-item"><span class="icon">🎓</span><div><strong>Education</strong><span>B.Tech in CSE, SGT University</span></div></div>
+                        <div class="highlight-item"><span class="icon">💡</span><div><strong>Interests</strong><span>iOS Dev, UI/UX, AR, Hackathons</span></div></div>
                     </div>
                 </div>
             </div>
@@ -776,37 +783,29 @@
                 <h2>Skills & Technologies</h2>
                 <div class="skills-container stagger-children">
                     <div class="skill-category">
-                        <div class="category-header"><span class="category-icon">🎨</span><h3>Frontend</h3></div>
+                        <div class="category-header"><span class="category-icon">📱</span><h3>Mobile & UI/UX</h3></div>
                         <div class="skill-icons">
-                            <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React"><span>React</span></div>
-                            <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" alt="Next.js"><span>Next.js</span></div>
-                            <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript"><span>JavaScript</span></div>
-                            <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript"><span>TypeScript</span></div>
+                            <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apple/apple-original.svg" alt="iOS"><span>iOS Development</span></div>
+                            <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/swift/swift-original.svg" alt="Swift"><span>Swift/SwiftUI</span></div>
+                            <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma"><span>UI Design</span></div>
+                            <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/facebook/facebook-original.svg" alt="Spark AR"><span>Spark AR</span></div>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <div class="category-header"><span class="category-icon">⚙️</span><h3>Programming & Technical</h3></div>
+                        <div class="skill-icons">
+                            <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C Language"><span>C Language</span></div>
+                            <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/matlab/matlab-original.svg" alt="MATLAB"><span>MATLAB</span></div>
+                            <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git"><span>Git & GitHub</span></div>
+                            <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/trello/trello-plain.svg" alt="Problem Solving"><span>Problem Solving</span></div>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <div class="category-header"><span class="category-icon">🌐</span><h3>Web Fundamentals</h3></div>
+                        <div class="skill-icons">
                             <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5"><span>HTML5</span></div>
                             <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3"><span>CSS3</span></div>
-                            <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" alt="Tailwind"><span>Tailwind</span></div>
-                            <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" alt="Sass"><span>Sass</span></div>
-                        </div>
-                    </div>
-                    <div class="skill-category">
-                        <div class="category-header"><span class="category-icon">⚙️</span><h3>Backend</h3></div>
-                        <div class="skill-icons">
-                            <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js"><span>Node.js</span></div>
-                            <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="Express"><span>Express</span></div>
-                            <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB"><span>MongoDB</span></div>
-                            <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL"><span>PostgreSQL</span></div>
-                            <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python"><span>Python</span></div>
-                        </div>
-                    </div>
-                    <div class="skill-category">
-                        <div class="category-header"><span class="category-icon">🛠️</span><h3>Tools & Others</h3></div>
-                        <div class="skill-icons">
-                            <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git"><span>Git</span></div>
-                            <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub"><span>GitHub</span></div>
-                            <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code"><span>VS Code</span></div>
-                            <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma"><span>Figma</span></div>
-                            <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker"><span>Docker</span></div>
-                            <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" alt="Firebase"><span>Firebase</span></div>
+                            <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript"><span>JavaScript</span></div>
                         </div>
                     </div>
                 </div>
@@ -819,35 +818,35 @@
                 <span class="section-label">My Work</span>
                 <h2>Featured Projects</h2>
                 <div class="projects-grid stagger-children">
-                    <!-- TODO: Replace with your project details -->
+                    <!-- TODO: Replace these placeholders with your actual project details! -->
                     <article class="project-card">
                         <div class="project-image">
-                            <img src="https://images.unsplash.com/photo-1555774698-0b77e0abfe79?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600" alt="Project 1 Mockup" loading="lazy">
+                            <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?q=80&w=1974&auto=format&fit=crop" alt="iOS App Project" loading="lazy">
                             <div class="project-overlay">
-                                <a href="#" class="overlay-link" target="_blank">View Live</a>
+                                <a href="#" class="overlay-link" target="_blank">View on App Store</a>
                                 <a href="#" class="overlay-link" target="_blank">View Code</a>
                             </div>
                         </div>
                         <div class="project-content">
-                            <div class="project-tags"><span class="tag">React</span><span class="tag">Node.js</span><span class="tag">MongoDB</span></div>
-                            <h3>E-Commerce Platform</h3>
-                            <p>A full-featured e-commerce platform with user authentication, product management, and secure payment integration.</p>
+                            <div class="project-tags"><span class="tag">SwiftUI</span><span class="tag">iOS</span><span class="tag">Firebase</span></div>
+                            <h3>My iOS App Project</h3>
+                            <p>A brief, compelling description of your iOS app. What problem does it solve? What are its key features?</p>
                             <div class="project-links">
-                                <a href="#" class="link-primary" target="_blank">Live Demo <span>→</span></a>
+                                <a href="#" class="link-primary" target="_blank">Learn More <span>→</span></a>
                                 <a href="#" class="link-secondary" target="_blank"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg> GitHub</a>
                             </div>
                         </div>
                     </article>
                     <article class="project-card">
                         <div class="project-image">
-                            <img src="https://images.unsplash.com/photo-1516321497487-e288fb19713f?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600" alt="Project 2 Mockup" loading="lazy">
-                            <div class="project-overlay"><a href="#" class="overlay-link" target="_blank">View Live</a><a href="#" class="overlay-link" target="_blank">View Code</a></div>
+                            <img src="https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?q=80&w=2070&auto=format&fit=crop" alt="UI Design Project" loading="lazy">
+                            <div class="project-overlay"><a href="#" class="overlay-link" target="_blank">View on Figma</a><a href="#" class="overlay-link" target="_blank">View Case Study</a></div>
                         </div>
                         <div class="project-content">
-                            <div class="project-tags"><span class="tag">Next.js</span><span class="tag">Tailwind</span><span class="tag">Firebase</span></div>
-                            <h3>Project Management App</h3>
-                            <p>A collaborative tool for teams to manage tasks, track progress, and communicate effectively, built with real-time updates.</p>
-                            <div class="project-links"><a href="#" class="link-primary" target="_blank">Live Demo <span>→</span></a><a href="#" class="link-secondary" target="_blank"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg> GitHub</a></div>
+                            <div class="project-tags"><span class="tag">UI/UX</span><span class="tag">Figma</span><span class="tag">Case Study</span></div>
+                            <h3>UI Design Internship Project</h3>
+                            <p>An overview of the UI design project you worked on during your internship. Mention the process and your contribution.</p>
+                            <div class="project-links"><a href="#" class="link-primary" target="_blank">Case Study <span>→</span></a></div>
                         </div>
                     </article>
                     <!-- Add more project cards as needed -->
@@ -860,7 +859,7 @@
             <div class="container animate-on-scroll">
                 <span class="section-label">Let's Connect</span>
                 <h2>Get In Touch</h2>
-                <p class="section-description">Have a project in mind or just want to chat? Feel free to reach out! I'm always open to discussing new ideas and opportunities.</p>
+                <p class="section-description">Have a project in mind or just want to chat? I'm always open to discussing new ideas, collaborations, and opportunities.</p>
                 <div class="contact-content">
                     <form id="contact-form" class="contact-form">
                         <div class="form-row">
@@ -877,7 +876,7 @@
                         </div>
                         <div class="form-group">
                             <label for="message">Message <span class="required">*</span></label>
-                            <textarea id="message" name="message" rows="6" placeholder="Tell me about your project..." required></textarea>
+                            <textarea id="message" name="message" rows="6" placeholder="Tell me about your project or idea..." required></textarea>
                             <span class="error-message"></span>
                         </div>
                         <button type="submit" class="submit-btn btn">
@@ -887,8 +886,8 @@
                         <div class="form-status"></div>
                     </form>
                     <div class="contact-info">
-                        <div class="info-card"><div class="info-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div><h4>Email</h4><a href="mailto:your.email@example.com">your.email@example.com</a></div>
-                        <div class="info-card"><div class="info-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div><h4>Location</h4><p>Your City, Country</p></div>
+                        <div class="info-card"><div class="info-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div><h4>Email</h4><a href="mailto:aryanslnky04@gmail.com">aryanslnky04@gmail.com</a></div>
+                        <div class="info-card"><div class="info-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div><h4>Location</h4><p>Delhi, India</p></div>
                     </div>
                 </div>
             </div>
@@ -899,14 +898,11 @@
     <footer class="main-footer">
         <div class="container footer-content">
             <div class="footer-social-links">
-                <!-- TODO: Replace with your actual social links -->
-                <a href="https://github.com/yourusername" class="social-icon" target="_blank" aria-label="GitHub"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg></a>
-                <a href="https://linkedin.com/in/yourusername" class="social-icon" target="_blank" aria-label="LinkedIn"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></a>
-                <a href="https://twitter.com/yourusername" class="social-icon" target="_blank" aria-label="Twitter"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/></svg></a>
+                <a href="https://github.com/AryAryas" class="social-icon" target="_blank" aria-label="GitHub"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg></a>
+                <a href="https://www.linkedin.com/in/aryan-solanki-profile" class="social-icon" target="_blank" aria-label="LinkedIn"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></a>
             </div>
             <p class="copyright">
-                © <span id="copyright-year"></span> Aryan Solanki. All Rights Reserved. <br>
-                Design inspired by modern best practices.
+                © <span id="copyright-year"></span> Aryan Solanki. All Rights Reserved.
             </p>
         </div>
     </footer>
@@ -921,7 +917,6 @@
     <!-- ALL JAVASCRIPT IS INCLUDED BELOW -->
     <!-- ============================================================================== -->
     <script>
-        // Use an IIFE (Immediately Invoked Function Expression) to avoid polluting the global namespace
         (function() {
 
             // --- Copyright Year ---
@@ -929,10 +924,9 @@
 
             // --- Typing Animation ---
             (function() {
-                // TODO: Customize these phrases
                 const phrases = [
-                    "I build things for the web.",
-                    "I craft digital experiences.",
+                    "I am an iOS Developer.",
+                    "I design user interfaces.",
                     "I solve problems with code.",
                     "I love to learn and create."
                 ];
@@ -958,7 +952,7 @@
                     let typeSpeed = isDeleting ? 75 : 150;
 
                     if (!isDeleting && charIndex === currentPhrase.length) {
-                        typeSpeed = 2000; // Pause at end of phrase
+                        typeSpeed = 2000;
                         isDeleting = true;
                     } else if (isDeleting && charIndex === 0) {
                         isDeleting = false;
@@ -970,7 +964,6 @@
 
                 document.addEventListener('DOMContentLoaded', () => setTimeout(type, 1000));
             })();
-
 
             // --- Scroll Animations (Intersection Observer) ---
             (function() {
@@ -995,38 +988,32 @@
                 document.querySelectorAll('.animate-on-scroll, .stagger-children').forEach(el => observer.observe(el));
             })();
 
-
-            // --- Floating Navigation ---
+            // --- Floating Navigation & Active Section Highlighting ---
             (function() {
                 const nav = document.querySelector('.main-nav');
+                const navLinks = document.querySelectorAll('.nav-links a');
+                const sections = document.querySelectorAll('section[id]');
                 if (!nav) return;
+                
                 let lastScroll = 0;
 
                 window.addEventListener('scroll', () => {
                     const currentScroll = window.pageYOffset;
+                    
+                    // Nav visibility
                     nav.classList.toggle('scrolled', currentScroll > 50);
                     nav.classList.toggle('hidden', currentScroll > lastScroll && currentScroll > nav.offsetHeight);
                     lastScroll = currentScroll;
-                });
-            })();
-            
-            
-            // --- Active Section Highlighting ---
-            (function() {
-                const sections = document.querySelectorAll('section[id]');
-                const navLinks = document.querySelectorAll('.nav-links a');
-                if (!sections.length || !navLinks.length) return;
-
-                window.addEventListener('scroll', () => {
-                    const scrollPos = window.pageYOffset + 200;
+                    
+                    // Active link highlighting
                     let currentId = '';
-
                     sections.forEach(section => {
-                        if (scrollPos >= section.offsetTop && scrollPos < (section.offsetTop + section.offsetHeight)) {
+                        const sectionTop = section.offsetTop;
+                        if (currentScroll >= sectionTop - nav.offsetHeight) {
                             currentId = section.getAttribute('id');
                         }
                     });
-                    
+
                     navLinks.forEach(link => {
                         link.classList.remove('active');
                         if (link.getAttribute('href') === `#${currentId}`) {
@@ -1035,8 +1022,7 @@
                     });
                 });
             })();
-
-
+            
             // --- Contact Form Handler ---
             (function() {
                 const form = document.getElementById('contact-form');
@@ -1080,13 +1066,9 @@
                     submitBtn.disabled = true;
                     formStatus.classList.remove('show');
 
-                    // Simulate API call (replace with your form endpoint e.g., Formspree, Netlify Forms)
                     try {
+                        // Simulate API call for demo. Replace with a real service like Formspree.
                         await new Promise(resolve => setTimeout(resolve, 2000));
-                        // In a real scenario, you'd use fetch() to send data
-                        // const response = await fetch('YOUR_ENDPOINT_URL', { method: 'POST', body: new FormData(form) });
-                        // if (!response.ok) throw new Error('Network response was not ok');
-
                         formStatus.className = 'form-status success show';
                         formStatus.textContent = '✨ Message sent successfully! I\'ll get back to you soon.';
                         form.reset();
